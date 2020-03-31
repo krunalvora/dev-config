@@ -1,6 +1,6 @@
 # Git commands automation
 
-## Automate `git add`, `git commit -m` and `git push` in one single command `gitd`
+## Automate `git add`, `commit` and `push` into a single command `gitd`
 
 ```bash
 # Add this alias in your ~/.bashrc or ~/.bash_profile
