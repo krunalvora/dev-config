@@ -2,6 +2,8 @@
 
 ## Automate `git add`, `commit` and `push` into a single command `gitd`
 
+> Already taken care of in the [bash](https://github.com/krunalvora/dev-config/tree/master/bash) section. Please follow the steps there.
+
 ```bash
 # Add this alias in your ~/.bashrc or ~/.bash_profile
 alias gitd='<path-to-dev-config>/git/gitpush.sh'
