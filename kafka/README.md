@@ -2,6 +2,8 @@
 
 Add the following to your `~/.bashrc`/`~/.bash_profile`:
 
+> Already taken care of in the [bash](https://github.com/krunalvora/dev-config/tree/master/bash) section. Please follow the steps there.
+
 ```bash
 # Kafka environment variables
 export KAFKA_HOME=/usr/local/kafka

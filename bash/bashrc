@@ -1,0 +1,11 @@
+export DEV_CONFIG=$HOME/personal/dev-config
+
+# Kafka scripts configuration in PATH
+export KAFKA_HOME=/usr/local/kafka
+export PATH=$KAFKA_HOME/bin:$PATH
+export PATH=$DEV_CONFIG/kafka:$PATH
+
+# Git commands automation
+alias gitd='$DEV_CONFIG/git/gitpush.sh'
+
+
