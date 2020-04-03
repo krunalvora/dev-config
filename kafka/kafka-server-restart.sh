@@ -8,5 +8,5 @@ SERVER_PROP_PATH="$MY_KAFKA_HOME/config/$SERVER_PROPERTIES"
 $MY_KAFKA_HOME/bin/kafka-server-stop.sh
 
 # Start the kafka server 
-$MY_KAFKA_HOME/bin/kafka-server-start.sh -daemon $SERVER_PROP_PATH
+./kafka-server-start.sh $SERVER_PROP_PATH
 
