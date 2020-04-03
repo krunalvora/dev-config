@@ -1,6 +1,18 @@
 syntax on
 colorscheme desert
 
+set tabstop=2       " The width of a TAB is set to 4.
+                    " Still it is a \t. It is just that
+                    " Vim will interpret it to be having
+                    " a width of 4.
+
+set shiftwidth=2    " Indents will have a width of 4
+
+set softtabstop=2   " Sets the number of columns for a TAB
+
+set expandtab       " Expand TABs to spaces
+
+
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
 
@@ -19,5 +31,13 @@ Plug 'valloric/youcompleteme'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" Enter vim with NERDTree
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" Modal mappings
+:nnoremap nt :NERDTree<enter>
+:nnoremap ntt :NERDTreeToggle<enter>
+:nnoremap ntf :NERDTreeFocus<enter>
+
+:imap <c-dd> <esc>ddi
