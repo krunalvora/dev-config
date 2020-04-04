@@ -39,5 +39,7 @@ call plug#end()
 :nnoremap nt :NERDTree<enter>
 :nnoremap ntt :NERDTreeToggle<enter>
 :nnoremap ntf :NERDTreeFocus<enter>
+:nnoremap fzf :FZF<enter>
+
 
 :imap <c-dd> <esc>ddi
