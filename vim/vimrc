@@ -1,5 +1,10 @@
-syntax on
+syntax enable
+set background=dark
 colorscheme desert
+
+" Numbering
+set number
+highlight LineNr ctermfg=grey
 
 set tabstop=2       " The width of a TAB is set to 4.
                     " Still it is a \t. It is just that
@@ -20,7 +25,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
-Plug 'junegunn/seoul256.vim'
 Plug 'preservim/nerdtree'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -28,19 +32,26 @@ Plug 'itchyny/lightline.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'valloric/youcompleteme'
 Plug 'sheerun/vim-polyglot'
+Plug 'Yggdroot/indentLine'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
-" Enter vim with NERDTree
+" IndentLine properties/mappings
+:nnoremap ilt :IndentLinesToggle<enter>
+let g:indentLine_color_term = 236
+let g:indentLine_bgcolor_gui = '#00FFFFFF'
+
+" NERDTree properties/mappings
 " autocmd StdinReadPre * let s:std_in=1
 " autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
-" Modal mappings
 :nnoremap nt :NERDTree<enter>
 :nnoremap ntt :NERDTreeToggle<enter>
 :nnoremap ntf :NERDTreeFocus<enter>
+
+" FZF properties/mappings
 :nnoremap fzf :FZF<enter>
 
-
+" Insert mode mappings
 :imap <c-dd> <esc>ddi
+
