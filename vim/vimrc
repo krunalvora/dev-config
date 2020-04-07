@@ -34,6 +34,7 @@ Plug 'valloric/youcompleteme'
 Plug 'sheerun/vim-polyglot'
 Plug 'Yggdroot/indentLine'
 Plug 'raimondi/delimitmate'
+Plug 'airblade/vim-gitgutter'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
