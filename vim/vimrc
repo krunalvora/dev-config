@@ -33,6 +33,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'valloric/youcompleteme'
 Plug 'sheerun/vim-polyglot'
 Plug 'Yggdroot/indentLine'
+Plug 'raimondi/delimitmate'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
