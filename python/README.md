@@ -7,6 +7,10 @@ brew install openssl readline sqlite3 xz zlib
 
 brew install pyenv
 
+# Add the following snippet to .bashrc / .bash_profile
+eval "$(pyenv init - | sed 's:^pyenv() :function pyenv():')"
+
+
 pyenv install 2.7.18
 pyenv install 3.8.5
 
@@ -18,14 +22,6 @@ pyenv version
 
 # List all python versions
 pyenv versions
-```
-
-Add the following snippet to `.bashrc`/`.bash_profile`:
-```bash
-# python pyenv configuration
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
 ```
 
 Verify python versions:
