@@ -1,6 +1,8 @@
 # Installing and managing Python using `pyenv`
 
-## MacOS
+https://github.com/pyenv/pyenv#installation
+
+### MacOS
 
 ```bash
 brew install openssl readline sqlite3 xz zlib
@@ -9,8 +11,10 @@ brew install pyenv
 
 # Add the following snippet to .bashrc / .bash_profile
 eval "$(pyenv init - | sed 's:^pyenv() :function pyenv():')"
+```
 
 
+```bash
 pyenv install 2.7.18
 pyenv install 3.8.5
 
