@@ -1,20 +1,10 @@
 # Bash configuration
 
-Set a symbolic link for `~/.bashrc` (or `~/.bash_profile`):
+In your `~/.bashrc` (or `~/.bash_profile`), append:
 
-- Linux
-	
-	```bash
-	ln -s <path-to-dev-config>/bash/bashrc ~/.bashrc
-	source ~/.bashrc
-	```
-
-- MacOS
-
-	```bash
-	ln -s <path-to-dev-config>/bash/bashrc ~/.bash_profile
-	source ~/.bash_profile
-	```
+```bash
+  source <path-to-repo>/dev-config/bash/bashrc
+```
 
 # Powerline for Bash
 
