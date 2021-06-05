@@ -6,6 +6,8 @@ In your `~/.bashrc` (or `~/.bash_profile`), append:
   source <path-to-repo>/dev-config/bash/bashrc
 ```
 
+And then, `source ~/.bashrc`
+
 # Powerline for Bash
 
 ```bash
