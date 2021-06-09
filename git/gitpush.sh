@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# Warning for main or master branch
+CURR_BRANCH=`git branch --show-current`
+if [ $CURR_BRANCH == "main" ] || [ $CURR_BRANCH == "master" ]; then
+    read -p "Do you want to continue on main branch? " -n 1 -r
+    echo    # (optional) move to a new line
+    if ! [[ $REPLY =~ ^[Yy]$ ]]; then
+        exit 1
+    fi
+fi
+
 # Automation to git add, commit and push in one step
 git add .
 
